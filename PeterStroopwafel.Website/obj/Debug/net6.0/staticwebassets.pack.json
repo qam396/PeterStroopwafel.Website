@@ -1,0 +1,305 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\Smeren maar.jpg",
+      "PackagePath": "staticwebassets\\Smeren maar.jpg"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\glyphicons\\.npmignore",
+      "PackagePath": "staticwebassets\\glyphicons\\.npmignore"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\glyphicons\\.travis.yml",
+      "PackagePath": "staticwebassets\\glyphicons\\.travis.yml"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\glyphicons\\LICENSE.md",
+      "PackagePath": "staticwebassets\\glyphicons\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\glyphicons\\README.md",
+      "PackagePath": "staticwebassets\\glyphicons\\README.md"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\glyphicons\\glyphicons.js",
+      "PackagePath": "staticwebassets\\glyphicons\\glyphicons.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\glyphicons\\glyphicons.spec.js",
+      "PackagePath": "staticwebassets\\glyphicons\\glyphicons.spec.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\glyphicons\\package.json",
+      "PackagePath": "staticwebassets\\glyphicons\\package.json"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\images.jpg",
+      "PackagePath": "staticwebassets\\images.jpg"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\js\\site.min.js",
+      "PackagePath": "staticwebassets\\js\\site.min.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\freelancer\\dist\\freelancer.js",
+      "PackagePath": "staticwebassets\\lib\\freelancer\\dist\\freelancer.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\respond.js\\respond.js",
+      "PackagePath": "staticwebassets\\lib\\respond.js\\respond.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\lib\\respond.js\\respond.min.js",
+      "PackagePath": "staticwebassets\\lib\\respond.js\\respond.min.js"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\oud-hollandse-stroopwafelkar.jpg",
+      "PackagePath": "staticwebassets\\oud-hollandse-stroopwafelkar.jpg"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\peter.jpg",
+      "PackagePath": "staticwebassets\\peter.jpg"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\stroopwafelkar-1.jpg",
+      "PackagePath": "staticwebassets\\stroopwafelkar-1.jpg"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\stroopwafelkar-2.jpg",
+      "PackagePath": "staticwebassets\\stroopwafelkar-2.jpg"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\stroopwafelnagels.jpg",
+      "PackagePath": "staticwebassets\\stroopwafelnagels.jpg"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\superwafel-super-stroopwafel.jpg",
+      "PackagePath": "staticwebassets\\superwafel-super-stroopwafel.jpg"
+    },
+    {
+      "Id": "C:\\Temp\\Assignment\\PeterStroopwafel.Website\\wwwroot\\waffle2.png",
+      "PackagePath": "staticwebassets\\waffle2.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PeterStroopwafel.Website.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.PeterStroopwafel.Website.props",
+      "PackagePath": "build\\PeterStroopwafel.Website.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.PeterStroopwafel.Website.props",
+      "PackagePath": "buildMultiTargeting\\PeterStroopwafel.Website.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.PeterStroopwafel.Website.props",
+      "PackagePath": "buildTransitive\\PeterStroopwafel.Website.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
