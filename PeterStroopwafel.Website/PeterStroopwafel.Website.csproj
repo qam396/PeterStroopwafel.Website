@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images.jpg" />
+    <None Include="wwwroot\oud-hollandse-stroopwafelkar.jpg" />
+    <None Include="wwwroot\peter.jpg" />
+    <None Include="wwwroot\Smeren maar.jpg" />
+    <None Include="wwwroot\stroopwafelkar-1.jpg" />
+    <None Include="wwwroot\stroopwafelkar-2.jpg" />
+    <None Include="wwwroot\stroopwafelnagels.jpg" />
+    <None Include="wwwroot\superwafel-super-stroopwafel.jpg" />
+    <None Include="wwwroot\waffle2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.6" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.113" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

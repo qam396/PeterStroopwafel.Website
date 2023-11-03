@@ -1,0 +1,49 @@
+﻿@model Stroopwafels.Models.QuoteViewModel
+@{
+    ViewBag.Title = "Stroopwafels bestellen";
+}
+
+<div class="jumbotron">
+    <h1>Stroopwafels bestellen</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @using (Html.BeginForm("Order", "Stroopwafel", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+
+            <h2>Prijzen</h2>
+            <p>
+                <div class="row">Je bestelling:</div>
+
+                @for (var index = 0; index < Model.OrderRows.Count; index++)
+                {
+                    @Html.HiddenFor(m => Model.OrderRows[index].Type)
+                    @Html.HiddenFor(m => Model.OrderRows[index].Amount)
+                    <div class="row">
+                        <div class="col-2 font-weight-bold">@Html.Label(Model.OrderRows[index].DisplayName)</div>
+                        <div class="col-1">@Model.OrderRows[index].Amount</div>
+                    </div>
+                }
+                
+                <div class="row">Prijzen per leverancier:</div>
+                @for (var index = 0; index < Model.Quotes.Count; index++)
+                {
+                    @Html.HiddenFor(m => Model.Quotes[index].SupplierName)
+                    <div class="row">
+                        <div class="col-2">
+                            @Html.RadioButtonFor(m => Model.SelectedSupplier, Model.Quotes[index].SupplierName)
+                            <label class="font-weight-bold" for="@Model.Quotes[index].SupplierName">@Model.Quotes[index].SupplierName</label>
+                        </div>
+                        <div class="col-1">@Html.Label(Model.Quotes[index].TotalAmount)</div>
+                    </div>
+                }
+            </p>
+            <p>
+                <input class="btn btn-outline-secondary" type="submit" value="Stroopwafels bestellen" />
+            </p>
+        }
+    </div>
+</div>
