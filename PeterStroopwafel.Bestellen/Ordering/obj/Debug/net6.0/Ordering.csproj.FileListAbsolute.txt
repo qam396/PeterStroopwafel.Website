@@ -1,0 +1,12 @@
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\bin\Debug\net6.0\Ordering.deps.json
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\bin\Debug\net6.0\Ordering.dll
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\bin\Debug\net6.0\Ordering.pdb
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\Ordering.csproj.AssemblyReference.cache
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\Ordering.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\Ordering.AssemblyInfoInputs.cache
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\Ordering.AssemblyInfo.cs
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\Ordering.csproj.CoreCompileInputs.cache
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\Ordering.dll
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\refint\Ordering.dll
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\Ordering.pdb
+C:\Temp\Assignment\PeterStroopwafel.Bestellen\Ordering\obj\Debug\net6.0\ref\Ordering.dll
