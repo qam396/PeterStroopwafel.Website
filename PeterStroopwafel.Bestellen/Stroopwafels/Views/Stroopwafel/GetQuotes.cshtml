@@ -37,7 +37,7 @@
                             @Html.RadioButtonFor(m => Model.SelectedSupplier, Model.Quotes[index].SupplierName)
                             <label class="font-weight-bold" for="@Model.Quotes[index].SupplierName">@Model.Quotes[index].SupplierName</label>
                         </div>
-                        <div class="col-1">@Html.Label(Model.Quotes[index].TotalAmount)</div>
+                        <div class="col-1">@Model.Quotes[index].TotalAmount</div>
                     </div>
                 }
             </p>
