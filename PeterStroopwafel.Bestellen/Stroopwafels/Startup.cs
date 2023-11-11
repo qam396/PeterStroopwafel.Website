@@ -21,6 +21,7 @@ namespace Stroopwafels
         {
             services.AddControllersWithViews();
             services.AddSingleton<IHttpClientWrapper, HttpClientWrapper>();
+            services.AddHttpClient<IHttpClientWrapper, HttpClientWrapper>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

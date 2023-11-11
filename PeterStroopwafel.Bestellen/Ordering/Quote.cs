@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Ordering
@@ -18,10 +19,13 @@ namespace Ordering
 
         public ISupplier Supplier { get; }
 
-        public Quote(IList<QuoteLine> orderLines, ISupplier supplier)
+        public DateOnly DeliveryDate { get; }
+
+        public Quote(IList<QuoteLine> orderLines, ISupplier supplier, DateOnly deliveryDate)
         {
             OrderLines = orderLines;
             Supplier = supplier;
+            DeliveryDate = deliveryDate;
         }
     }
 }

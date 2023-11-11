@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Ordering.Services
 {
     public class QuoteBuilder
     {
-        public Quote CreateOrder(IList<KeyValuePair<StroopwafelType, int>> orderDetails, IList<Stroopwafel> stroopwafels, ISupplier supplier)
+        public Quote CreateOrder(IList<KeyValuePair<StroopwafelType, int>> orderDetails, IList<Stroopwafel> stroopwafels, ISupplier supplier, DateOnly deliveryDate)
         {
             var orderLines = new List<QuoteLine>();
 
@@ -15,7 +16,7 @@ namespace Ordering.Services
                 orderLines.Add(new QuoteLine(orderLine.Value, stroopwafel));
             }
 
-            return new Quote(orderLines, supplier);
+            return new Quote(orderLines, supplier, deliveryDate);
         }
     }
 }

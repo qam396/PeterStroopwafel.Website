@@ -7,6 +7,9 @@ namespace Stroopwafels.Models
     {
         public IList<OrderRow> OrderRows { get; set; }
 
+        /// <summary>
+        /// Initialize orderDetail view model
+        /// </summary>
         public OrderDetailsViewModel()
         {
             OrderRows = new List<OrderRow>

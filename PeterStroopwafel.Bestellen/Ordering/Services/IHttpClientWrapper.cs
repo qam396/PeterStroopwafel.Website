@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Ordering.Services
 {
     public interface IHttpClientWrapper
     {
-        HttpContent Get(HttpRequestMessage request);
+        Task<HttpContent> GetAsync(HttpRequestMessage request);
 
-        HttpResponseMessage Post(Uri requestUri, HttpContent content);
+        Task<HttpResponseMessage> PostAsync(Uri requestUri, HttpContent content);
     }
 }

@@ -20,21 +20,21 @@ namespace Ordering.Services
 
         public Quote GetQuote(IList<KeyValuePair<StroopwafelType, int>> orderDetails)
         {
-            var result = ExecuteGet(ProductsUri);
-            var json = result.RootElement.GetRawText();
+            var result = ExecuteGetAsync(ProductsUri);
+            var json = result.Result.RootElement.GetRawText();
             var options = new JsonSerializerOptions { Converters = { new JsonStringEnumConverter() } };
             var stroopwafels = JsonSerializer.Deserialize<IList<Stroopwafel>>(json, options);
 
             var builder = new QuoteBuilder();
 
-            return builder.CreateOrder(orderDetails, stroopwafels!, new SupplierC());
+            return builder.CreateOrder(orderDetails, stroopwafels!, new SupplierC(), DateOnly.FromDateTime(DateTime.Now).AddDays(5));
         }
 
         public void Order(IList<KeyValuePair<StroopwafelType, int>> quoteLines)
         {
             var builder = new OrderBuilder();
             var order = builder.CreateOrder(quoteLines);
-            ExecutePost(OrderUri, order);
+            ExecutePostAsync(OrderUri, order);
         }
     }
 }

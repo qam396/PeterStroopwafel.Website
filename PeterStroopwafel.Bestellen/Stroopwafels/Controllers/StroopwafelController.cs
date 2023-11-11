@@ -14,6 +14,10 @@ namespace Stroopwafels.Controllers
         private readonly QuotesQueryHandler _quotesQueryHandler;
         private readonly OrderCommandHandler _orderCommandHandler;
 
+        /// <summary>
+        /// constructor
+        /// </summary>
+        /// <param name="httpClientWrapper"></param>
         public StroopwafelController(IHttpClientWrapper httpClientWrapper)
         {
             var suppliers = new IStroopwafelSupplierService[]
@@ -26,6 +30,10 @@ namespace Stroopwafels.Controllers
             _orderCommandHandler = new OrderCommandHandler(suppliers);
         }
 
+        /// <summary>
+        /// Initiate model for main page
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             var viewModel = new OrderDetailsViewModel();
@@ -33,6 +41,11 @@ namespace Stroopwafels.Controllers
             return View(viewModel);
         }
 
+        /// <summary>
+        /// Post request to get quotes from different suppliers, return their prices (incl shipping cost1) and cheapest supplier.
+        /// </summary>
+        /// <param name="formModel"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult GetQuotes(OrderDetailsViewModel formModel)
         {
@@ -50,11 +63,13 @@ namespace Stroopwafels.Controllers
                 viewModel.Quotes.Add(new Models.Quote
                 {
                     SupplierName = quote.Supplier.Name,
-                    TotalAmount = quote.TotalPricePresentation
+                    TotalAmount = quote.TotalPricePresentation,
+                    DeliveryDate = quote.DeliveryDate
                 });
             }
 
             viewModel.OrderRows = formModel.OrderRows;
+            // Select cheapest supplier
             viewModel.SelectedSupplier = quotes.OrderBy(q => q.TotalPrice).First().Supplier.Name;
 
             return View(viewModel);
@@ -75,6 +90,11 @@ namespace Stroopwafels.Controllers
                 .ToList();
         }
 
+        /// <summary>
+        /// Place an order request
+        /// </summary>
+        /// <param name="formModel"></param>
+        /// <returns></returns>
         public ActionResult Order(QuoteViewModel formModel)
         {
             if (!ModelState.IsValid)

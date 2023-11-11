@@ -32,12 +32,15 @@
                 @for (var index = 0; index < Model.Quotes.Count; index++)
                 {
                     @Html.HiddenFor(m => Model.Quotes[index].SupplierName)
+                    @Html.HiddenFor(m => Model.Quotes[index].TotalAmount)
+                    @Html.HiddenFor(m => Model.Quotes[index].DeliveryDate)
                     <div class="row">
                         <div class="col-2">
                             @Html.RadioButtonFor(m => Model.SelectedSupplier, Model.Quotes[index].SupplierName)
                             <label class="font-weight-bold" for="@Model.Quotes[index].SupplierName">@Model.Quotes[index].SupplierName</label>
                         </div>
                         <div class="col-1">@Model.Quotes[index].TotalAmount</div>
+                        <div class="col-1">@Model.Quotes[index].DeliveryDate</div>
                     </div>
                 }
             </p>

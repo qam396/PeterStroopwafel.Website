@@ -1,50 +1,33 @@
 using System;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Ordering.Services
 {
-    public class HttpClientWrapper : IHttpClientWrapper, IDisposable
+    public class HttpClientWrapper : IHttpClientWrapper
     {
-        private bool _disposed;
 
         private readonly HttpClient _httpClient;
 
-        public HttpClientWrapper()
+        public HttpClientWrapper(HttpClient httpClient)
         {
-            _httpClient = new HttpClient();
+            _httpClient = httpClient;
         }
 
-        public HttpContent Get(HttpRequestMessage request)
+        public async Task<HttpContent> GetAsync(HttpRequestMessage request)
         {
-            var response = _httpClient.SendAsync(request).Result;
+            var response = await _httpClient.SendAsync(request);
             response.EnsureSuccessStatusCode();
 
             return response.Content;
         }
 
-        public HttpResponseMessage Post(Uri requestUri, HttpContent content)
+        public async Task<HttpResponseMessage> PostAsync(Uri requestUri, HttpContent content)
         {
-            var response = _httpClient.PostAsync(requestUri, content).Result;
+            var response = await _httpClient.PostAsync(requestUri, content);
             response.EnsureSuccessStatusCode();
 
             return response;
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!disposing || _disposed)
-            {
-                return;
-            }
-
-            _disposed = true;
-            _httpClient?.Dispose();
         }
     }
 }
