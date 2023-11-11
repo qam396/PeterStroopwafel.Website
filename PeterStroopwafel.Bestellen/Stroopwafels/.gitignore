@@ -1,3 +1,7 @@
 bin/
 *.obj
 packages
+Ordering/bin/
+Ordering/*.obj
+Stroopwafels/bin/
+Stroopwafels/*.obj
