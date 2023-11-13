@@ -22,6 +22,7 @@
                 {
                     @Html.HiddenFor(m => Model.OrderRows[index].Type)
                     @Html.HiddenFor(m => Model.OrderRows[index].Amount)
+                    @Html.HiddenFor(m => Model.OrderRows[index].Quotes)
                     <div class="row">
                         <div class="col-2 font-weight-bold">@Html.Label(Model.OrderRows[index].DisplayName)</div>
                         <div class="col-1">@Model.OrderRows[index].Amount</div>
@@ -29,7 +30,37 @@
                 }
                 
                 <div class="row">Prijzen per leverancier:</div>
-                @for (var index = 0; index < Model.Quotes.Count; index++)
+                @for (var index = 0; index < Model.OrderRows.Count; index++)
+                {
+                    @Html.HiddenFor(m => Model.OrderRows[index].Quotes)
+                    <div class="row">
+                        <div class="col-2">
+                            @Model.OrderRows[index].Type
+                        </div>
+                        <div class="col-10">
+                            @{
+                                var quotes = Model.OrderRows[index].Quotes;
+                            }
+                            @for (var ind = 0; ind < quotes.Count; ind++)
+                            {
+                                @Html.HiddenFor(m => quotes[ind].SupplierName)
+                                @Html.HiddenFor(m => quotes[ind].TotalAmount)
+                                @Html.HiddenFor(m => quotes[ind].DeliveryDate)
+                                @Html.HiddenFor(m => quotes)
+                                <div class="row">
+                                    <div class="col-2">
+                                        @Html.RadioButtonFor(m => Model.OrderRows[index].SelectedSupplier, quotes[ind].SupplierName)
+                                        <label class="font-weight-bold" for="@quotes[ind].SupplierName">@quotes[ind].SupplierName</label>
+                                    </div>
+                                    <div class="col-1">@quotes[ind].TotalAmount</div>
+                                    <div class="col-1">@quotes[ind].DeliveryDate</div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                }
+@*                @for (var index = 0; index < Model.Quotes.Count; index++)
                 {
                     @Html.HiddenFor(m => Model.Quotes[index].SupplierName)
                     @Html.HiddenFor(m => Model.Quotes[index].TotalAmount)
@@ -42,7 +73,7 @@
                         <div class="col-1">@Model.Quotes[index].TotalAmount</div>
                         <div class="col-1">@Model.Quotes[index].DeliveryDate</div>
                     </div>
-                }
+                }*@
             </p>
             <p>
                 <input class="btn btn-outline-secondary" type="submit" value="Stroopwafels bestellen" />

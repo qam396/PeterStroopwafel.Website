@@ -4,11 +4,11 @@ namespace Ordering.Queries
 {
     public class QuotesQuery
     {
-        public IList<KeyValuePair<StroopwafelType, int>> OrderLines { get; }
+        public KeyValuePair<StroopwafelType, int> OrderLine { get; }
 
-        public QuotesQuery(IList<KeyValuePair<StroopwafelType, int>> orderLines)
+        public QuotesQuery(KeyValuePair<StroopwafelType, int> orderLine)
         {
-            OrderLines = orderLines;
+            OrderLine = orderLine;
         }
     }
 }

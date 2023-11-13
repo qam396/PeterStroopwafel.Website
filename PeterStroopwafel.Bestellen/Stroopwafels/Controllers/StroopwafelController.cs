@@ -43,6 +43,7 @@ namespace Stroopwafels.Controllers
 
         /// <summary>
         /// Post request to get quotes from different suppliers, return their prices (incl shipping cost1) and cheapest supplier.
+        /// Quotes are different per supplier, as different types can be ordered from different supplier
         /// </summary>
         /// <param name="formModel"></param>
         /// <returns></returns>
@@ -55,29 +56,47 @@ namespace Stroopwafels.Controllers
             }
 
             var orderDetails = GetOrderDetails(formModel.OrderRows);
-            var quotes = GetQuotesFor(orderDetails);
 
             var viewModel = new QuoteViewModel();
-            foreach (var quote in quotes)
-            {
-                viewModel.Quotes.Add(new Models.Quote
-                {
-                    SupplierName = quote.Supplier.Name,
-                    TotalAmount = quote.TotalPricePresentation,
-                    DeliveryDate = quote.DeliveryDate
-                });
-            }
+            var orderRows = new List<OrderRow>();
 
-            viewModel.OrderRows = formModel.OrderRows;
-            // Select cheapest supplier
-            viewModel.SelectedSupplier = quotes.OrderBy(q => q.TotalPrice).First().Supplier.Name;
+            foreach (var orderDetail in orderDetails)
+            {
+                // foreach type and amount get qoutes from supplier
+                var quotes = GetQuotesFor(orderDetail);
+
+                var orderRow = new OrderRow
+                {
+                    Type = orderDetail.Key,
+                    Amount = orderDetail.Value,
+                    Quotes = new List<Models.Quote>()
+                };
+
+                foreach (var quote in quotes)
+                {
+                    orderRow.Quotes.Add(new Models.Quote
+                    {
+                        SupplierName = quote.Supplier.Name,
+                        TotalAmount = quote.TotalPricePresentation,
+                        DeliveryDate = quote.DeliveryDate
+                    });
+                }
+
+                // from all quotes, get cheapest supplier
+                orderRow.SelectedSupplier = quotes.OrderBy(q => q.TotalPrice).First().Supplier.Name;
+                orderRows.Add(orderRow);
+
+                formModel.OrderRows = orderRows;
+
+                viewModel.OrderRows = formModel.OrderRows;
+            }
 
             return View(viewModel);
         }
 
-        private IList<Ordering.Quote> GetQuotesFor(IList<KeyValuePair<StroopwafelType, int>> orderDetails)
+        private IList<Ordering.Quote> GetQuotesFor(KeyValuePair<StroopwafelType, int> orderDetail)
         {
-            var query = new QuotesQuery(orderDetails);
+            var query = new QuotesQuery(orderDetail);
             var orders = _quotesQueryHandler.Handle(query);
 
             return orders;
@@ -92,6 +111,7 @@ namespace Stroopwafels.Controllers
 
         /// <summary>
         /// Place an order request
+        /// Todo: Order should be per type, as it different type ordr is sent to different supplier.
         /// </summary>
         /// <param name="formModel"></param>
         /// <returns></returns>
@@ -104,8 +124,13 @@ namespace Stroopwafels.Controllers
 
             var orderDetails = GetOrderDetails(formModel.OrderRows);
 
-            var command = new OrderCommand(orderDetails, formModel.SelectedSupplier);
-            _orderCommandHandler.Handle(command);
+
+            foreach (var orderDetail in orderDetails)
+            {
+                // TODO: instead of orderDetails, it should take single orderDetail.Quotes (not done yet)
+                var command = new OrderCommand(orderDetails, formModel.OrderRows.Single(x => x.Type == orderDetail.Key).SelectedSupplier);
+                _orderCommandHandler.Handle(command);
+            }
 
             return View();
 

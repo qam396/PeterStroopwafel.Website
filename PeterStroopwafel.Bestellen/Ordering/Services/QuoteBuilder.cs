@@ -6,17 +6,12 @@ namespace Ordering.Services
 {
     public class QuoteBuilder
     {
-        public Quote CreateOrder(IList<KeyValuePair<StroopwafelType, int>> orderDetails, IList<Stroopwafel> stroopwafels, ISupplier supplier, DateOnly deliveryDate)
+        public Quote CreateOrder(KeyValuePair<StroopwafelType, int> orderDetail, IList<Stroopwafel> stroopwafels, ISupplier supplier, DateOnly deliveryDate)
         {
-            var orderLines = new List<QuoteLine>();
+            var stroopwafel = stroopwafels.First(s => s.Type == orderDetail.Key);
+            var orderLine = new QuoteLine(orderDetail.Value, stroopwafel);
 
-            foreach (var orderLine in orderDetails)
-            {
-                var stroopwafel = stroopwafels.First(s => s.Type == orderLine.Key);
-                orderLines.Add(new QuoteLine(orderLine.Value, stroopwafel));
-            }
-
-            return new Quote(orderLines, supplier, deliveryDate);
+            return new Quote(orderLine, supplier, deliveryDate);
         }
     }
 }

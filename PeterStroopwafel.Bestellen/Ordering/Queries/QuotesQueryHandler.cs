@@ -16,7 +16,7 @@ namespace Ordering.Queries
         {
             return _stroopwafelSupplierServices
                 .Where(service => service.IsAvailable)
-                .Select(service => service.GetQuote(query.OrderLines))
+                .Select(service => service.GetQuote(query.OrderLine))
                 .ToList();
         }
     }

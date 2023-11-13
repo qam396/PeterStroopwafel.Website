@@ -18,7 +18,7 @@ namespace Ordering.Services
         {
         }
 
-        public Quote GetQuote(IList<KeyValuePair<StroopwafelType, int>> orderDetails)
+        public Quote GetQuote(KeyValuePair<StroopwafelType, int> orderDetail)
         {
             var result = ExecuteGetAsync(ProductsUri);
             var json = result.Result.RootElement.GetRawText();
@@ -27,7 +27,7 @@ namespace Ordering.Services
 
             var builder = new QuoteBuilder();
 
-            return builder.CreateOrder(orderDetails, stroopwafels!, new SupplierA(), DateOnly.FromDateTime(DateTime.Now).AddDays(4));
+            return builder.CreateOrder(orderDetail, stroopwafels!, new SupplierA(), DateOnly.FromDateTime(DateTime.Now).AddDays(4));
         }
 
         public void Order(IList<KeyValuePair<StroopwafelType, int>> quoteLines)

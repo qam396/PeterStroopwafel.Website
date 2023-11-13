@@ -37,7 +37,7 @@ namespace Ordering.Services
             return !isHoliday;
         }
 
-        public Quote GetQuote(IList<KeyValuePair<StroopwafelType, int>> orderDetails)
+        public Quote GetQuote(KeyValuePair<StroopwafelType, int> orderDetail)
         {
             if (!IsAvailable)
             {
@@ -50,7 +50,7 @@ namespace Ordering.Services
             var stroopwafels = JsonSerializer.Deserialize<IList<Stroopwafel>>(json, options);
 
             var builder = new QuoteBuilder();
-            return builder.CreateOrder(orderDetails, stroopwafels!, new SupplierB(), DateOnly.FromDateTime(DateTime.Now).AddDays(3));
+            return builder.CreateOrder(orderDetail, stroopwafels!, new SupplierB(), DateOnly.FromDateTime(DateTime.Now).AddDays(3));
         }
 
         public void Order(IList<KeyValuePair<StroopwafelType, int>> quoteLines)

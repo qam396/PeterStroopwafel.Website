@@ -21,6 +21,8 @@
                 @for (var index = 0; index < Model.OrderRows.Count; index++)
                 {
                     @Html.HiddenFor(m => Model.OrderRows[index].Type)
+                    @Html.HiddenFor(m => Model.OrderRows[index].Quotes)
+                    @Html.HiddenFor(m => Model.OrderRows[index].SelectedSupplier)
                     <div class="row">
                         <div class="col-1 font-weight-bold">@Html.Label(Model.OrderRows[index].DisplayName)</div>
                         <div class="col-1">@Html.TextBoxFor(m => Model.OrderRows[index].Amount)</div>

@@ -12,18 +12,18 @@ namespace Ordering
 
         public decimal TotalWithoutShippingCost
         {
-            get { return OrderLines.Sum(o => o.Price); }
+            get { return OrderLine.Price; }
         }
 
-        public IList<QuoteLine> OrderLines { get; }
+        public QuoteLine OrderLine { get; }
 
         public ISupplier Supplier { get; }
 
         public DateOnly DeliveryDate { get; }
 
-        public Quote(IList<QuoteLine> orderLines, ISupplier supplier, DateOnly deliveryDate)
+        public Quote(QuoteLine orderLine, ISupplier supplier, DateOnly deliveryDate)
         {
-            OrderLines = orderLines;
+            OrderLine = orderLine;
             Supplier = supplier;
             DeliveryDate = deliveryDate;
         }

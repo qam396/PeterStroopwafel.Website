@@ -8,7 +8,7 @@ namespace Ordering
 
         bool IsAvailable { get; }
 
-        Quote GetQuote(IList<KeyValuePair<StroopwafelType, int>> orderDetails);
+        Quote GetQuote(KeyValuePair<StroopwafelType, int> orderDetail);
 
         void Order(IList<KeyValuePair<StroopwafelType, int>> quote);
     }
